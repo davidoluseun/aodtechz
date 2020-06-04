@@ -1,0 +1,12 @@
+# Ignore ESLint file
+.eslintrc.js
+
+# Ignore .json files
+*.json
+
+# Ignore local libs files
+libs
+
+# Ignore minified files
+*.min.js
+*.min.css
