@@ -310,6 +310,7 @@ html[xmlns] .flexslider .slides {
 
 .showcase {
     position: relative;
+    margin-top: 3.625rem;
 }
 
 .intro {
@@ -396,7 +397,6 @@ html[xmlns] .flexslider .slides {
     bottom: 0;
     width: 100%;
     text-align: center;
-    transform: scale(0);
     background: #222525;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
@@ -404,22 +404,6 @@ html[xmlns] .flexslider .slides {
     -o-transition: transform .3s ease-in-out;
     -webkit-transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
-}
-
-.port-item:hover .port-title {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-.port-item a:focus + .port-title {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
 }
 
 /* Trusted
@@ -486,6 +470,26 @@ html[xmlns] .flexslider .slides {
         -o-transform: scale(1.1);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+    }
+
+    .port-title {
+        transform: scale(0);
+    }
+    
+    .port-item:hover .port-title {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .port-item a:focus + .port-title {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 
 }

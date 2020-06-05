@@ -1,10 +1,16 @@
 (function() {
     "use strict";
 
-    $(document).ready(function() {
+    // Preloader animation
+    window.addEventListener("load", function() {
 
-        // Preloader animation
+        // Fade out .preloader element
         $(".preloader").fadeOut();
+
+    }, false);     
+
+    // jQuery document ready function
+    $(document).ready(function() {
 
         // Grab .nav-toggler element
         var $navToggler = $(".nav-toggler");
